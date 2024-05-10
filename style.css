@@ -1,0 +1,312 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', 'helvetica', 'sans-serif';
+    cursor: default;
+}
+
+body {
+    background: linear-gradient(135deg, darkslateblue, lightskyblue) no-repeat; background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    margin: 20px 20px;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.main .left{
+    position: relative;
+    background: lightskyblue;
+    padding: 30px;
+}
+
+.main .right{
+    position: relative;
+    background: #242333;
+    padding: 30px;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.profile h2{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile h2:hover{
+    text-transform: uppercase;
+}
+
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.profile .img_itself{
+    position: relative;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .img_itself img{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.personal_details{
+    padding-top: 40px;
+}
+
+.title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.personal_details ul{
+    position: relative;
+}
+
+.personal_details ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}   
+
+.personal_details ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.personal_details ul li span{
+    color: black;
+    font-weight: bold;
+}
+
+.personal_details.achievements li{
+    margin-bottom: 15px;
+}
+
+.personal_details.achievements h4{
+    color: darkslateblue;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.personal_details.achievements p{
+    color: black;
+    font-weight: 500;
+}
+
+.personal_details.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: white;
+    display: block;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.personal_details.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: darkslateblue;
+}
+
+.personal_details.languages .percent div:hover{
+    background: rgb(120, 99, 255);
+    transition: 1s ease;
+}
+
+/* right side */
+
+.summary{
+    margin-bottom: 50px;
+}
+
+.summary:last-child{
+    margin-bottom: 0;
+}
+
+.head-2{
+    color: beige;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px rgb(120, 99, 255);
+}
+
+.head-2:hover{
+    text-shadow: 2px 2px rgb(120, 99, 255);
+}
+
+.summary p{
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    word-spacing: 3px;
+    box-shadow: 5px 5px black;
+    margin-top: 5px;
+}
+
+.summary p:hover{
+    box-shadow: 5px 5px rgb(120, 99, 255);
+}
+
+.summary .cont2{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.summary .cont2 .edu-year{
+    min-width: 150px;
+}
+
+.summary .cont2 .edu-year h5{
+    color: rgb(120, 99, 255);
+    font-weight: 600;
+}
+
+.summary .cont2 .text h4{
+    color: lightskyblue;
+}
+
+.skills .cont2{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .cont2 h4{
+    color: white;
+    font-weight: 500;
+}
+
+.skills .cont2 .percent{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background: #f0f0f0;
+}
+
+.skills .cont2 .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(120, 99, 255);
+}
+
+.skills .cont2 .percent div:hover{
+    background: salmon;
+    transition: 1s ease;
+}
+
+.interests ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+}
+
+.interests ul li, .links ul{
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.interests ul li .fa{
+    color: rgb(120, 99, 255);
+    font-size: 20px;
+    width: 40px;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    align-items: center;
+}
+
+.links ul li .fa{
+    color: white;
+    font-size: 35px;
+    width: 40px;
+    cursor: pointer !important;
+    text-shadow: 2px 2px rgb(120, 99, 255);
+}
+
+.links ul li .fa:hover{
+    color: rgb(120, 99, 255);
+    text-shadow: none;
+    transition: 1s ease;
+}
+
+@media (max-width: 1000px) {
+    .main{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .links ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interests ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .summary .cont2{
+        flex-direction: column;
+    }
+    .summary .cont2 .edu-year{
+        margin-bottom: 5px;
+    }
+    .interests ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .cont2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
